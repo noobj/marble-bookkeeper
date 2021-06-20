@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./dist/",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": false,
+    "pretty": true,
+    "declaration": true,
+    "target": "es2017",
+    "incremental": true,
+    "diagnostics": true,
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "paths": {
+      "@app": ["./app"],
+      "@api/*": ["api/*"],
+      "@config": ["config"],
+      "@connection": ["connection"],
+      "@seed": ["seed"],
+      "@tests": ["tests"],
+      "@util": ["util"]
+    }
+  },
+  "include": [
+    "./node_modules/@types",
+    "./src/**/*.ts"
+  ],
+}
